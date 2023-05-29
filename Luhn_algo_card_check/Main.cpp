@@ -69,7 +69,7 @@ int ispravan_unos(long long kartica)
 	return 0;
 }
 
-// RaËuna duûinu unesenog broja
+// Ra√®una du≈æinu unesenog broja
 int duzina_broja(long long kartica)
 {
 	long long kartica2 = kartica;
@@ -120,9 +120,9 @@ int checksum(long long kartica, int duzina)
 	return sum_all;
 }
 
-// Provjerava vrstu kartice - super referencu sam naöao na paypalu: 
+// Provjerava vrstu kartice - super referencu sam na≈°ao na paypalu: 
 // https://developer.paypal.com/api/nvp-soap/payflow/integration-guide/test-transactions/#standard-test-cards
-// Ovo sam napravio i zato jer sam skuûio da 5673598276138003 prolazi checksum, ali nije uopÊe valjana kartica niti jedne banke 
+// Npr. 5673598276138003 prolazi checksum, ali nije uop√¶e valjana kartica niti jedne banke pa treba uzeti u obzir
 
 int provjera_izdavatelja(long long kartica, int duzina)
 {
